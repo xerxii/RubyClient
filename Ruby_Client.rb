@@ -10,7 +10,7 @@ begin
   require 'system/getifaddrs'
   require 'enum'
 rescue LoadError=>Error
-  pp("The error occured, #{Error}")
+  puts("The error occured, #{Error}")
 end
 
 # The family of protocols: Socket::PF_INET, Socket::PF_INET6, Socket::PF_UNIX
