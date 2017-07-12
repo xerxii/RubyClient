@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
+# encoding: utf-8
 
+# This was never intended for production
+# Still a work in progress
 require 'ostruct'
 require 'socket'
 require 'securerandom'
@@ -10,7 +13,7 @@ begin
   require 'system/getifaddrs'
   require 'enum'
 rescue LoadError=>Error
-  puts("The error occured, #{Error}")
+  puts("The following error occured, #{Error}")
 end
 
 # The family of protocols: Socket::PF_INET, Socket::PF_INET6, Socket::PF_UNIX
