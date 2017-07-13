@@ -94,6 +94,7 @@ class Client
       puts("Connection has been refused")
     end
   end
+    
   def read
     data = @sock.recvfrom(1600)
     data_read = @sock.read(1600)
@@ -106,16 +107,11 @@ class Client
       return data, data_read
   end
   
-  def 
-  
   def write(data)
     if data
       @sock.write(data)
     @sock.close_write
   end
   
-  def 
-  
-  end
   
 end
